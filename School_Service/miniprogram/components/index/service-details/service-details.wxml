@@ -1,0 +1,29 @@
+<!--components/index/service-details/service-details.wxml-->
+<view class="wrapper">
+	<view class="myTips">
+		<image
+		 class="tipsImage"
+		 src="/images/logo/xiaohui.jpg"
+		 mode="widthFix"
+		/>
+		<text class="tips">{{tips}}</text>
+	</view>
+
+	<view class="grid-wrapper">
+		<view
+		 class="grid-item"
+		 wx:for="{{grid}}"
+		 wx:key="id"
+		>
+			<navigator url="{{item.url}}" hover-class="navigator-hover">
+				<image
+				 class="image"
+				 src="{{item.image}}"
+				 mode="widthFix"
+				></image>
+				<text class="word">{{item.title}}</text>
+			</navigator>
+		</view>
+	</view>
+</view>
+

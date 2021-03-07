@@ -1,0 +1,42 @@
+/* components/index/service-details/service-details.wxss */
+.wrapper {
+  width: 100%;
+  color: #747474;
+}
+.myTips{
+  margin-top: 10rpx;
+  position: relative;
+}
+.tipsImage{
+  width: 46rpx;
+  height: 46rpx;
+  margin-left: 36rpx;
+}
+.tips{
+  font-size: 28rpx;
+  color: #1296DB;
+  margin-left: 10rpx;
+  position: absolute;
+  top: 7rpx;
+}
+.grid-wrapper {
+  display: flex;
+  justify-content: flex-start;    /*项目位于容器的开头*/
+  align-items: center;
+  flex-wrap: wrap;                /*规定灵活的项目在必要的时候拆行或拆列*/
+  background-color: #fff;
+}
+.grid-item {
+  text-align: center;
+  width: 25%;
+  padding: 20rpx 0;
+}
+.image {
+  width: 64rpx;
+  height: 64rpx;
+}
+.word {
+  display: block;
+  font-size: 24rpx;
+  padding-top: 4rpx;
+}

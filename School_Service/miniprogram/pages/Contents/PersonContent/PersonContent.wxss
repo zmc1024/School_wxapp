@@ -1,0 +1,40 @@
+/* miniprogram/pages/Contents/PersonContent/PersonContent.wxss */
+.content{
+  letter-spacing: 1rpx;
+}
+.avatar-img{
+  height: 130rpx;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  margin-left: 35rpx;
+  font-size: 28rpx;
+}
+.per-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 14rpx;
+  background-size: cover;
+  margin-right: 35rpx;
+}
+
+.person-msg{
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.per-msg{
+  margin-left: 35rpx;
+  font-size: 28rpx;
+}
+.per-val{
+  margin-right: 35rpx;
+  font-size: 28rpx;
+}

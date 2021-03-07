@@ -1,0 +1,13 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FACD50",
+  "navigationBarTitleText": "二手集市",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}

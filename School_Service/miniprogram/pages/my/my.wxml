@@ -1,0 +1,54 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="container">
+	<view
+	 class="userinfo"
+	 data-avatarUrl="{{avatarUrl}}"
+	 bindtap="navtoPInfo"
+	>
+		<button
+		 wx:if="{{!hasUserInfo}}"
+		 open-type="getUserInfo"
+		 bindgetuserinfo="onGetUserInfo"
+		>点击登录
+		</button>
+		<block>
+			<image
+			 class="userinfo-avatar"
+			 src="{{avatarUrl}}"
+			 mode="widthFix"
+			/>
+			<view class="student-msg" wx:if="{{hasUserInfo}}">
+				<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+				<text class="student-number">201720181703</text>
+			</view>
+			<view class="school-year" wx:if="{{hasUserInfo}}">
+				<text class="semester">大四第一学期</text>
+				<text class="school-week">第3周 - 星期四</text>
+			</view>
+			<van-icon
+			 class="student-arrow"
+			 name="arrow"
+			 wx:if="{{hasUserInfo}}"
+			/>
+		</block>
+	</view>
+
+	<view class="intro">
+		<view
+		 class="intro-item"
+		 wx:for="{{introduce}}"
+		 wx:key="id"
+		>
+			<van-icon
+			 class="icon-left"
+			 color="{{item.color}}"
+			 name="{{item.iconName}}"
+			/>
+			<text class="name">{{item.name}}</text>
+			<van-icon class="icon-right" name="{{iconArrow}}" />
+		</view>
+	</view>
+
+	<button class="bind">立即绑定</button>
+</view>
+

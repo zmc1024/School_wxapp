@@ -1,0 +1,94 @@
+/* miniprogram/pages/my/my.wxss */
+.userinfo{
+  margin-top: 20rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;  /* 弹性盒元素灵活项目的方向 */
+  align-items: center;
+  transition: all 300ms ease;   /* 动画过渡 */
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 14rpx;
+  background-size: cover;
+  background-color: white;
+  margin-left: 40rpx;
+}
+.userinfo-avatar:after {
+  border: none;
+}
+.student-msg {
+  margin-right: 124rpx;
+}
+.userinfo-nickname {
+  display: block;
+  font-size: 34rpx;
+  color: black;
+  background-color: white;
+  background-size: cover;   /* 指定背景图像的大小 */
+  margin-bottom: 8rpx;
+  letter-spacing: 4rpx;
+}
+.userinfo-nickname::after {
+  border: none;
+}
+.student-number{
+  display: block;
+  color: #90A4AE;
+  font-size: 24rpx;
+  letter-spacing: 1rpx;
+}
+.school-year {
+  margin-right: 20rpx;
+}
+.semester, .school-week{
+  display: block;
+  color: #90A4AE;
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+}
+.semester {
+  margin-bottom: 10rpx;
+}
+.student-arrow {
+  color: #90A4AE;
+}
+
+.intro{
+  margin-top: 30rpx;
+  width: 100%;
+  background: #fff;
+}
+.intro-item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+.icon-left{
+  margin: 0 17rpx 0 30rpx;
+}
+.name{
+  font-size: 28rpx;
+}
+.icon-right{
+  padding-left: 550rpx;
+  color: #90A4AE
+}
+
+.bind{
+  border-radius: 10rpx;
+  width: 93%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  background-color: #00B26A;
+  margin-top: 25rpx;
+}

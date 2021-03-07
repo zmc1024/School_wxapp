@@ -1,0 +1,17 @@
+/* miniprogram/pages/Contents/academyContent/academyContent.wxss */
+.title{
+  text-align: center;
+  font-weight: bold;
+  margin: 20rpx 0 10rpx 0;
+  font-size: 34rpx;
+}
+.content{
+  margin: 0 auto;
+  width: 94%;
+}
+.academy-desc{
+  text-indent: 2rem;
+  line-height: 45rpx;
+  text-align: justify;
+  font-size: 26rpx;
+}

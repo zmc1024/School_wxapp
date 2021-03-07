@@ -1,0 +1,71 @@
+<!--miniprogram/pages/Contents/swzlOnlyRead/swzlOnlyRead.wxml-->
+<view class="content">
+	<view class="title" wx:if="{{tagNum==0}}">寻物启事详情</view>
+	<view class="title" wx:else>招领启事详情</view>
+	<van-divider dashed />
+	<view class="info">
+		<view class="person" wx:if="{{tagNum==0}}">失主信息：</view>
+		<view class="person" wx:else>发布人信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="姓名"
+			 value="{{ perName }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<van-field
+			 label="联系方式"
+			 model:value="{{ telPhone }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+		</van-cell-group>
+		<van-divider dashed />
+		<view class="goods" wx:if="{{tagNum==0}}">丢失物品信息：</view>
+		<view class="goods" wx:else>捡到物品信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="物品名称"
+			 model:value="{{ goodsName }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<van-field
+			 wx:if="{{tagNum==0}}"
+			 label="丢失地点"
+			 model:value="{{ position }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-field
+			 wx:else
+			 label="拾取地点"
+			 model:value="{{ position }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<van-field
+			 input-class="textarea"
+			 model:value="{{ goodsDesc }}"
+			 type="textarea"
+			 autosize
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<image
+			 wx:if="{{ goodsImg }}"
+			 class="goodsImg"
+			 src="{{goodsImg}}"
+			 mode="widthFix"
+			/>
+			<van-divider dashed />
+		</van-cell-group>
+	</view>
+</view>
+

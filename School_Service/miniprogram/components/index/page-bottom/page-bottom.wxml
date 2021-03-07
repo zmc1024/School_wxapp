@@ -1,0 +1,10 @@
+<!--components/index/page-bottom/page-bottom.wxml-->
+<view class="line" style="{{logoStyle}}"></view>
+
+<view class="ecutCopyRight" style="{{logoStyle}}">
+	<text class="ecutReport">东华理工大学版权所有©2016</text>
+	<text class="ecutReport">赣ICP备11000994号-1  赣ICP备11000994号-2</text>
+	<text class="ecutReport">南昌校区：江西省南昌市经开区广兰大道418号</text>
+	<text class="ecutReport">抚州校区：江西省抚州市学府路56号</text>
+</view>
+

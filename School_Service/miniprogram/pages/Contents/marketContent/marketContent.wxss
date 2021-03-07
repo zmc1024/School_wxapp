@@ -1,0 +1,67 @@
+/* miniprogram/pages/Contents/marketContent/marketContent.wxss */
+.content{
+  min-height: 1000rpx;
+  height: 100%;
+  background-color: #FEFEFE;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 15rpx;
+}
+.title{
+  color: red;
+  text-align: center;
+  width: 94%;
+  margin: 20rpx auto;
+}
+.sec-title{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #686868;
+  margin: 16rpx 0 16rpx 0;
+}
+.style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  background-color: #fff;
+  width: 180rpx;
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 10rpx;
+}
+.input{
+  flex: 1;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.van-divider{
+  margin: 0 !important;
+}
+.block {
+  width: 480rpx;
+  height: 300rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.van-radio {
+  margin: 30rpx 200rpx 30rpx 0;
+}
+.textarea{
+  min-height: 120rpx !important;
+}
+#button{
+  background-color: #FACD50;
+  color: #fff;
+  font-weight: bold;
+  width: 40%;
+  border-radius: 30rpx;
+  margin: 30rpx auto;
+}

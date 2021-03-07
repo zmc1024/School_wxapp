@@ -1,0 +1,13 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#00B26A",
+  "navigationBarTitleText": "失物招领",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

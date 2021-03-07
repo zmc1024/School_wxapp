@@ -1,0 +1,43 @@
+<!--miniprogram/pages/CommonFunctions/News/News.wxml-->
+<view class="wrapper">
+	<!-- logo -->
+	<logo logoStyle="{{logoStyle}}"></logo>
+
+	<view class="sNews">校园新闻</view>
+
+	<!-- 内容 -->
+	<view
+	 class="newsList"
+	 wx:for="{{newsData}}"
+	 wx:key="index"
+	 data-url="{{item.url}}"
+	 bindtap="navtoUrl"
+	>
+		<van-icon name="volume-o" />
+		<text class="nName">{{item.newsTitle}}</text>
+		<text class="nTime">{{item.newsTime}}</text>
+	</view>
+
+	<!-- 换页 -->
+	<view class="list-page">
+		<text id="home-page" bindtap="homePage">首页</text>
+		<text id="pre-page" bindtap="prePage">上一页</text>
+		<view class="section">
+			<picker
+			 mode="selector"
+			 bindchange="bindPickerchange"
+			 range="{{pageArray}}"
+			 range-key="{{'num'}}"
+			 value="{{page - 1}}"
+			>
+				<view class="picker">第 {{pageArray[page - 1].num}} 页</view>
+			</picker>
+		</view>
+		<text id="next-page" bindtap="nextPage">下一页</text>
+		<text id="last-page" bindtap="lastPage">尾页</text>
+	</view>
+
+	<!-- 底部介绍 -->
+	<page-bottom logoStyle="{{logoStyle}}"></page-bottom>
+</view>
+

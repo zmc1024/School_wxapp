@@ -1,0 +1,44 @@
+/* miniprogram/pages/Contents/marketOnlyRead/marketOnlyRead.wxss */
+.content{
+  min-height: 1000rpx;
+  height: 100%;
+  background-color: #FEFEFE;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 30rpx;
+}
+.title{
+  font-size: 40rpx;
+  text-align: center;
+  margin: 20rpx 0 30rpx 0;
+  color: #686868;
+}
+.van-divider{
+  margin: 0 !important;
+}
+.person, .goods{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #686868;
+  margin: 26rpx 0 16rpx 0;
+}
+#channels{
+  color: #FACD50;
+}
+.picture{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #686868;
+  margin: 15rpx 0;
+}
+.textarea{
+  min-height: 120rpx !important;
+}
+.upload-img{
+  margin-left: 30rpx;
+}
+.goodsImg{
+  width: 300rpx;
+  display: flex;
+  margin: 0 auto;
+}

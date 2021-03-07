@@ -1,0 +1,11 @@
+<!--miniprogram/pages/CommonFunctions/schoolCalendar/schoolCalendar.wxml-->
+<view class="wrapper">
+
+	<van-calendar
+	 title="东华理工大学2021年校历"
+	 poppable="{{ false }}"
+	 show-confirm="{{ false }}"
+	 class="calendar"
+	/>
+</view>
+

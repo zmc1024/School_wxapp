@@ -1,0 +1,59 @@
+<!--miniprogram/pages/newThings/newThings.wxml-->
+<view class="content">
+	<!-- 添加按钮 -->
+	<van-icon
+	 class="add"
+	 name="add"
+	 color="#1296DB"
+	 size="90rpx"
+	 bind:click="navigaToPage"
+	/>
+	<!-- 选择栏 -->
+	<van-dropdown-menu class="menu">
+		<van-dropdown-item
+		 value="{{ value1 }}"
+		 options="{{ option1 }}"
+		 bind:change="onChange"
+		/>
+	</van-dropdown-menu>
+
+	<view class="data">
+		<view
+		 class="data-item"
+		 wx:for="{{ideaData}}"
+		 wx:key="itemId"
+		>
+			<view class="student-msg">
+				<image
+				 class="userinfo-avatar"
+				 src="{{item.avatarUrl}}"
+				 mode="widthFix"
+				/>
+				<text class="userinfo-nickname">{{item.nickName}}</text>
+				<text class="publish-time">{{item.dateNow}}</text>
+				<van-icon
+				 wx:if="{{userId == item._openid}}"
+				 name="cross"
+				 color="#1296DB"
+				 class="delete"
+				 data-id="{{item._id}}"
+				 bind:click="delete"
+				/>
+			</view>
+			<view class="data-desc">
+				<view class="desc">
+					<view class="title">#{{item.title}}#</view>
+					<text class="goods-desc">{{item.ideaDescript}}</text>
+				</view>
+				<image
+				 wx:if="{{item.imgUrl.length > 0}}"
+				 class="goods-img"
+				 src="{{item.imgUrl[0].url}}"
+				 mode="widthFix"
+				 lazy-load
+				/>
+			</view>
+		</view>
+	</view>
+</view>
+

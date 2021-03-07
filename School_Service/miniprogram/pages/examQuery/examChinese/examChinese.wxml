@@ -1,0 +1,5 @@
+<!--miniprogram/pages/examQuery/examChinese/examChinese.wxml-->
+<view class="content">
+	<web-view src="http://jx.cltt.org/Web/Login/PSCP01001.aspx"></web-view>
+</view>
+

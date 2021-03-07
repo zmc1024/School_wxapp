@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "swiper-title":"/components/index/swiper-title/swiper-title",
+    "service-details":"/components/index/service-details/service-details"
+  }
+}

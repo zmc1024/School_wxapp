@@ -1,0 +1,19 @@
+<!--miniprogram/pages/CommonFunctions/JiaoTong/JiaoTong.wxml-->
+<view class="wrapper">
+	<!-- logo -->
+	<logo logoStyle="{{logoStyle}}"></logo>
+
+	<!-- 内容 -->
+	<view class="content">
+		<view
+		 class="item-detail"
+		 wx:for="{{newsData}}"
+		 wx:key="index"
+		>{{item.detail}}
+		</view>
+	</view>
+
+	<!-- 底部介绍 -->
+	<page-bottom logoStyle="{{logoStyle}}"></page-bottom>
+</view>
+

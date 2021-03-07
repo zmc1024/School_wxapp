@@ -1,0 +1,84 @@
+<!--miniprogram/pages/Contents/swzlContent/swzlContent.wxml-->
+<view class="content">
+	<view class="title" wx:if="{{tagNum==0}}">发布寻物启事</view>
+	<view class="title" wx:else>发布招领启事</view>
+	<van-divider dashed />
+	<view class="info">
+		<view class="person">个人信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="发布人"
+			 value="{{ perName }}"
+			 placeholder="请输入名称"
+			 border="{{ false }}"
+			 bind:change="nameChange"
+			/>
+			<van-divider dashed />
+			<van-field
+			 label="联系方式"
+			 model:value="{{ telPhone }}"
+			 name="telPhone"
+			 placeholder="请输入联系方式"
+			 border="{{ false }}"
+			 bind:change="phoneChange"
+			/>
+		</van-cell-group>
+		<van-divider dashed />
+		<view class="goods">物品信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="物品名称"
+			 model:value="{{ goodsName }}"
+			 name="goodsName"
+			 placeholder="请输入物品名称"
+			 border="{{ false }}"
+			 bind:change="goodsChange"
+			/>
+			<van-divider dashed />
+			<van-field
+			 wx:if="{{tagNum==0}}"
+			 label="丢失地点"
+			 model:value="{{ position }}"
+			 name="position"
+			 placeholder="请输入地点"
+			 border="{{ false }}"
+			 bind:change="posiChange"
+			/>
+			<van-field
+			 wx:else
+			 label="拾取地点"
+			 model:value="{{ position }}"
+			 name="position"
+			 placeholder="请输入地点"
+			 border="{{ false }}"
+			 bind:change="posiChange"
+			/>
+			<van-divider dashed />
+			<van-field
+			 input-class="textarea"
+			 model:value="{{ goodsDesc }}"
+			 name="goodsDesc"
+			 placeholder="请输入物品描述等信息"
+			 type="textarea"
+			 autosize
+			 border="{{ false }}"
+			 bind:change="goodsDescChange"
+			/>
+			<van-divider dashed />
+			<view class="picture">(选填)请上传相关照片图片，重新上传可以覆盖</view>
+			<van-uploader
+			 class="upload-img"
+			 file-list="{{ fileList }}"
+			 deletable="{{ true }}"
+			 max-count="2"
+			 bind:after-read="afterRead"
+			 bind:delete="deleteImg"
+			/>
+			<van-divider dashed />
+		</van-cell-group>
+	</view>
+	<button id="button" bindtap="publish">发布</button>
+</view>
+

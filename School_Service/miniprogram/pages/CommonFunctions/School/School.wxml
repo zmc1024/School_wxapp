@@ -1,0 +1,28 @@
+<!--miniprogram/pages/CommonFunctions/School/School.wxml-->
+<view class="wrapper">
+	<!-- logo -->
+	<logo logoStyle="{{logoStyle}}"></logo>
+
+	<van-tabs active="{{ active }}" bind:click="onTabChange">
+		<van-tab title="学校简介"></van-tab>
+		<van-tab title="学校领导"></van-tab>
+	</van-tabs>
+	<view class="content">
+		<view
+		 class="newsList"
+		 wx:for="{{newsData}}"
+		 wx:key="index"
+		>
+			<view class="line" wx:if="{{item.imgUrl}}"></view>
+			<view class="item-img" wx:if="{{item.imgUrl}}">
+				<image class="image" src="https://www.ecut.edu.cn{{item.imgUrl}}" />
+			</view>
+			<view class="item-title" wx:if="{{item.title}}">{{item.title}}</view>
+			<view class="item-detail" wx:if="{{item.detail}}">{{item.detail}}</view>
+		</view>
+	</view>
+
+	<!-- 底部介绍 -->
+	<page-bottom logoStyle="{{logoStyle}}"></page-bottom>
+</view>
+

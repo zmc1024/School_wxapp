@@ -1,0 +1,49 @@
+/* miniprogram/pages/CommonFunctions/News/News.wxss */
+.wrapper{
+  background-color: #f8f8f8;
+}
+.sNews{
+  text-align: center;
+  font-weight: bold;
+  margin: 10rpx 0 2rpx 0;
+  font-size: 32rpx;
+}
+.newsList{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 22rpx;
+  border-bottom: 1px solid #DDDDDD;
+  height: 62rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383838;
+}
+.nName{
+  white-space: nowrap;		
+  overflow: hidden;			
+  text-overflow: ellipsis;	
+  flex: 1;
+  margin: 0 2rpx 0 10rpx;
+  font-size: 28rpx;
+}
+.nTime{
+  width: 130rpx;
+}
+.list-page{
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.list-page text{
+  flex: 1;
+}
+#home-page{
+  text-align: right;
+}
+#last-page{
+  text-align: left;
+}

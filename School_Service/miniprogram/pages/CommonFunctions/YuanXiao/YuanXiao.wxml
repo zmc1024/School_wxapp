@@ -1,0 +1,23 @@
+<!--miniprogram/pages/CommonFunctions/YuanXiao/YuanXiao.wxml-->
+<view class="wrapper">
+	<!-- logo -->
+	<logo logoStyle="{{logoStyle}}"></logo>
+
+	<!-- 内容 -->
+	<view
+	 class="academy-list"
+	 wx:for="{{grid}}"
+	 wx:key="index"
+	 data-url="{{item.url}}"
+	 data-name="{{item.academyName}}"
+	 bindtap="navtoUrl"
+	>
+		<view class="academy-item">{{item.academyName}}
+		</view>
+		<van-icon class="arrow-icon" name="arrow" />
+	</view>
+
+	<!-- 底部介绍 -->
+	<page-bottom logoStyle="{{logoStyle}}"></page-bottom>
+</view>
+

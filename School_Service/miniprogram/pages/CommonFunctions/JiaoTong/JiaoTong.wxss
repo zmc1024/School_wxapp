@@ -1,0 +1,12 @@
+/* miniprogram/pages/CommonFunctions/JiaoTong/JiaoTong.wxss */
+.wrapper{
+  background: #f8f8f8;
+}
+.content{
+  width: 92%;
+  margin: 20rpx auto;
+  font-size: 28rpx;
+}
+.item-detail {
+  margin-bottom: 10rpx;
+}

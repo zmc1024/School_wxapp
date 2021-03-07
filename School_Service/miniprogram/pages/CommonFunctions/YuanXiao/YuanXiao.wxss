@@ -1,0 +1,16 @@
+/* miniprogram/pages/CommonFunctions/YuanXiao/YuanXiao.wxss */
+.academy-list{
+  font-size: 28rpx;
+  border-bottom: 1px solid #DDDDDD;
+  height: 62rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #383838;
+}
+.academy-item{
+  margin-left: 30rpx;
+}
+.arrow-icon{
+  margin-right: 26rpx;
+}

@@ -1,0 +1,20 @@
+/* miniprogram/pages/Contents/messageWall/messageWall.wxss */
+.content{
+  background-color: #FEFEFE;
+}
+.textarea{
+  min-height: 120rpx !important;
+}
+.upload-img{
+  margin-left: 30rpx;
+}
+#button{
+  background-color: #1296DB;
+  color: #fff;
+  font-weight: bold;
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  margin: 30rpx auto;
+}

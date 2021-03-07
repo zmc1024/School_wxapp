@@ -1,0 +1,32 @@
+<!--miniprogram/pages/Contents/messageWall/messageWall.wxml-->
+<view class="content">
+	<van-dropdown-menu>
+		<van-dropdown-item
+		 value="{{ value1 }}"
+		 options="{{ option1 }}"
+		 bind:change="onChange"
+		/>
+	</van-dropdown-menu>
+	<van-cell-group>
+		<van-field
+		 input-class="textarea"
+		 model:value="{{ ideaDescript }}"
+		 name="ideaDescript"
+		 placeholder="这一刻的想法..."
+		 type="textarea"
+		 autosize
+		 border="{{ false }}"
+		 bind:change="ideaChange"
+		/>
+	</van-cell-group>
+	<van-uploader
+	 class="upload-img"
+	 file-list="{{ fileList }}"
+	 deletable="{{ true }}"
+	 max-count="2"
+	 bind:after-read="afterRead"
+	 bind:delete="deleteImg"
+	/>
+	<button id="button" bindtap="publish">发表</button>
+</view>
+

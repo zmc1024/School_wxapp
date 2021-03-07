@@ -1,0 +1,16 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="wrapper">
+	<!-- 轮播 -->
+	<swiper-title
+	 interval="{{interval}}"
+	 duration="{{duration}}"
+	 imgUrl="{{imgUrl}}"
+	></swiper-title>
+
+	<!-- 常用功能 -->
+	<service-details tips="{{tips1}}" grid="{{grid}}"></service-details>
+
+	<!-- 考试查询 -->
+	<service-details tips="{{tips2}}" grid="{{exam}}"></service-details>
+</view>
+

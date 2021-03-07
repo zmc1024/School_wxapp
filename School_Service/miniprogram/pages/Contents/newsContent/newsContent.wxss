@@ -1,0 +1,30 @@
+/* miniprogram/pages/Contents/newsContent/newsContent.wxss */
+.wrapper{
+  height: 100%;
+}
+.content{
+  width: 95%;
+  margin: 0 auto;
+}
+.news-title, .news-count{
+  text-align: center;
+}
+.news-title{
+  font-weight: bold;
+  margin: 20rpx 0;
+  font-size: 30rpx;
+}
+.news-count{
+  font-size: 24rpx;
+  margin-bottom: 26rpx;
+  font-family: NSimSun;
+}
+.news-desc{
+  text-indent: 2rem;
+  line-height: 45rpx;
+  text-align: justify;
+  font-size: 26rpx;
+}
+.image{
+  width: 100%;
+}

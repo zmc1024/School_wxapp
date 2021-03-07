@@ -1,0 +1,21 @@
+<!--miniprogram/pages/Contents/academyContent/academyContent.wxml-->
+<view class="wrapper">
+	<!-- logo -->
+	<logo logoStyle="{{logoStyle}}"></logo>
+
+	<view class="title">{{name}}</view>
+	<!-- 内容 -->
+	<view class="content">
+		<view
+		 class="academy-content"
+		 wx:for="{{academyData}}"
+		 wx:key="index"
+		>
+			<view class="academy-desc">{{item.desc}}</view>
+		</view>
+	</view>
+
+	<!-- 底部介绍 -->
+	<page-bottom logoStyle="{{logoStyle}}"></page-bottom>
+</view>
+

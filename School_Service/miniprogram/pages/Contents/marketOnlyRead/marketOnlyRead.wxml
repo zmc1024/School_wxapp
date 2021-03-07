@@ -1,0 +1,83 @@
+<!--miniprogram/pages/Contents/marketOnlyRead/marketOnlyRead.wxml-->
+<view class="content">
+	<view class="title">物品详情</view>
+	<van-divider dashed />
+	<view class="info">
+		<view class="person">发布人信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="发布人"
+			 value="{{ perName }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<view class="person" id="channels">联系渠道：</view>
+			<van-divider dashed />
+			<van-field
+			 wx:if="{{radio == 0}}"
+			 label="微信"
+			 model:value="{{ telPhone }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-field
+			 wx:if="{{radio == 1}}"
+			 label="QQ"
+			 model:value="{{ telPhone }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-field
+			 wx:if="{{radio == 2}}"
+			 label="手机号"
+			 model:value="{{ telPhone }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+		</van-cell-group>
+		<van-divider dashed />
+		<view class="goods">物品信息：</view>
+		<van-divider dashed />
+		<van-cell-group>
+			<van-field
+			 label="物品名称"
+			 model:value="{{ goodsName }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<van-field
+			 label="售价"
+			 model:value="{{ price }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-field
+			 label="交易方式"
+			 model:value="{{ tradeMode }}"
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<van-field
+			 label="描述"
+			 input-class="textarea"
+			 model:value="{{ goodsDesc }}"
+			 type="textarea"
+			 autosize
+			 border="{{ false }}"
+			 readonly
+			/>
+			<van-divider dashed />
+			<image
+			 class="goodsImg"
+			 src="{{goodsImg}}"
+			 mode="widthFix"
+			/>
+			<van-divider dashed />
+		</van-cell-group>
+	</view>
+</view>
+

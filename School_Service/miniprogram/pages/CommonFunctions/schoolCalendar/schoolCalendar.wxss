@@ -1,0 +1,4 @@
+/* miniprogram/pages/CommonFunctions/schoolCalendar/schoolCalendar.wxss */
+.calendar {
+  --calendar-height: 1210rpx;
+}

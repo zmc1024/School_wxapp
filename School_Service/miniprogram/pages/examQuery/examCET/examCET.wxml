@@ -1,0 +1,5 @@
+<!--miniprogram/pages/examQuery/examCET/examCET.wxml-->
+<view class="content">
+	<web-view src="https://www.chsi.com.cn/cet/wap/index.jsp"></web-view>
+</view>
+

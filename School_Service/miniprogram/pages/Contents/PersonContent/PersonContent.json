@@ -1,0 +1,11 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#1296DB",
+  "navigationBarTitleText": "个人信息",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

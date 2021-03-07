@@ -1,0 +1,7 @@
+/* components/index/swiper-title/swiper-title.wxss */
+.wrapper{
+  width: 100%;
+}
+.slide_image {
+  width: 100%;
+}

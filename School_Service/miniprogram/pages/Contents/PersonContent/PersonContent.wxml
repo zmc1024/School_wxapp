@@ -1,0 +1,20 @@
+<!--miniprogram/pages/Contents/PersonContent/PersonContent.wxml-->
+<view class="content">
+	<view class="avatar-img">
+		<text class="avatar">头像</text>
+		<image
+		 class="per-img"
+		 src="{{avatarUrl}}"
+		 mode="widthFix"
+		></image>
+	</view>
+	<view
+	 class="person-msg"
+	 wx:for="{{personInfo}}"
+	 wx:key="{{item.id}}"
+	>
+		<text class="per-msg">{{item.msg}}</text>
+		<text class="per-val">{{item.val}}</text>
+	</view>
+</view>
+

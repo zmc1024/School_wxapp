@@ -1,0 +1,14 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#00B26A",
+  "navigationBarTitleText": "学校简介",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "logo": "/components/index/logo/logo",
+    "page-bottom": "/components/index/page-bottom/page-bottom",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

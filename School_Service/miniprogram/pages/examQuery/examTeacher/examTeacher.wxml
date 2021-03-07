@@ -1,0 +1,5 @@
+<!--miniprogram/pages/examQuery/examTeacher/examTeacher.wxml-->
+<view class="content">
+	<web-view src="http://cjcx.neea.edu.cn/html1/folder/1508/206-1.htm?sid=2nasVMoohJ6cFnsQEIjGYmh"></web-view>
+</view>
+

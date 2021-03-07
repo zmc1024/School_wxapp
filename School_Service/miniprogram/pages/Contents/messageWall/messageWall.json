@@ -1,0 +1,14 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#1296DB",
+  "navigationBarTitleText": "ECUT留言墙",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}

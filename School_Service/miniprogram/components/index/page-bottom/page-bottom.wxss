@@ -1,0 +1,14 @@
+/* components/index/page-bottom/page-bottom.wxss */
+.ecutCopyRight {
+  width: 100%;
+  text-align: center;
+}
+.line{
+  height: 6rpx;
+  margin: 14rpx 0;
+}
+.ecutReport {
+  display: inline-block;
+  color: #fff;
+  font-size: 22rpx;
+}

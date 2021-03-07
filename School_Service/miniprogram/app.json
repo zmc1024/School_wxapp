@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newThings/newThings",
+    "pages/my/my",
+    "pages/CommonFunctions/JiaoTong/JiaoTong",
+    "pages/CommonFunctions/School/School",
+    "pages/CommonFunctions/News/News",
+    "pages/Contents/newsContent/newsContent",
+    "pages/CommonFunctions/YuanXiao/YuanXiao",
+    "pages/Contents/academyContent/academyContent",
+    "pages/CommonFunctions/schoolCalendar/schoolCalendar",
+    "pages/Contents/PersonContent/PersonContent",
+    "pages/CommonFunctions/Score/Score",
+    "pages/examQuery/examCET/examCET",
+    "pages/examQuery/examChinese/examChinese",
+    "pages/examQuery/examComputer/examComputer",
+    "pages/examQuery/examTeacher/examTeacher",
+    "pages/CommonFunctions/ShiWu/ShiWu",
+    "pages/Contents/swzlContent/swzlContent",
+    "pages/Contents/swzlOnlyRead/swzlOnlyRead",
+    "pages/Contents/messageWall/messageWall",
+    "pages/CommonFunctions/secondMarket/secondMarket",
+    "pages/Contents/marketContent/marketContent",
+    "pages/Contents/marketOnlyRead/marketOnlyRead"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296DB",
+    "navigationBarTitleText": "东华理工大学校园君",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296DB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/index.png",
+        "selectedIconPath": "images/tabBar/index1.png"
+      },
+      {
+        "pagePath": "pages/newThings/newThings",
+        "text": "留言墙",
+        "iconPath": "images/tabBar/liuyan.png",
+        "selectedIconPath": "images/tabBar/liuyan1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabBar/my.png",
+        "selectedIconPath": "images/tabBar/my1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+<!--components/index/logo/logo.wxml-->
+<view class="logo" style="{{logoStyle}}">
+	<image
+	 class="ecutLogo"
+	 src="/images/logo/logo.png"
+	 mode="widthFix"
+	/>
+</view>
+

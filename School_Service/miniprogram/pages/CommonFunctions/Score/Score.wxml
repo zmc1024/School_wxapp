@@ -1,0 +1,5 @@
+<!--miniprogram/pages/CommonFunctions/Score/Score.wxml-->
+<view class="content">
+	<web-view src="https://webvpn.ecut.edu.cn/users/sign_in"></web-view>
+</view>
+

@@ -1,0 +1,12 @@
+{
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#D4237A",
+  "navigationBarTitleText": "交通指南",
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "logo": "/components/index/logo/logo",
+    "page-bottom": "/components/index/page-bottom/page-bottom"
+  }
+}
